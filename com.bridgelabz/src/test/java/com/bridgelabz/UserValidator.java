@@ -22,7 +22,7 @@ public class UserValidator {
 		return pattern.matcher(lName).matches();
 	}
 
-	public boolean validateEmail(String email) {
+	public static boolean validateEmail(String email) {
 		Pattern pattern = Pattern.compile(emailID);
 		return pattern.matcher(email).matches();
 	}

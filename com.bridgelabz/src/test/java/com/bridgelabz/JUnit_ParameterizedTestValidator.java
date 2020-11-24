@@ -6,9 +6,12 @@ import java.util.Arrays;
 import java.util.Collection;
 
 import org.junit.Before;
-import org.junit.runners.parameterized.*;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
+
+
+
 @RunWith(Parameterized.class)
 public class JUnit_ParameterizedTestValidator {
 	private String inputmail;
@@ -44,7 +47,7 @@ public class JUnit_ParameterizedTestValidator {
 	@Test
 	public void testJunit_Paramaterized() {
 		System.out.println("Parameterized Mail is:"+ inputmail);
-		assertEquals(expectedResult,JUnit_ParamaterizedTest.validateEmail(inputmail));
+		assertEquals(expectedResult,UserValidator.validateEmail(inputmail));
 		
 	}
 	
